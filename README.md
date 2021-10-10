@@ -16,7 +16,8 @@ the generator will use window prompts to ask questions in order to customize the
 
 
 
-## website
+ ![_password-generator](https://user-images.githubusercontent.com/90042533/136712700-438ecd1d-5a5c-4dc1-9175-978e49fafa14.png)
+
 
 
 

@@ -22,17 +22,19 @@ function writePassword() {
 function generatePassword () {
   // Asks for user input
  var characterLength= prompt("How many characters would you like your password? Choose between 8 and 128");
-  // First if statement for user validation 
+ 
 
+  // First if statement for user validation 
 
   if (characterLength=== "") {
       alert("This needs a value");
 
-  } else if (characterLength < 8 || characterLength > 128) {
+    } else if (characterLength < 8 || characterLength > 128) {
       // Validates user input
       // Start user input prompts
 
     alert("You must choose between 8 and 128");
+    return generatePassword()
   
 
     } else {
@@ -42,8 +44,9 @@ function generatePassword () {
       numberConfirm = confirm("Do you want your password to contain numbers?");
       characterConfirm = confirm("Do you want your password to contain special characters?");
 
-  }  if (!uppercase && !lowercase && !number && !character) {
+  }  if (!uppercase && !lowercase && !character) {
     choices= alert ("You must choose a criteria");
+    return generatePassword();
   
   
   }if (uppercase) {
